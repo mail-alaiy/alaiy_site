@@ -5,6 +5,7 @@ import caseStudies from "../data/caseStudies";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useEffect } from "react";
+import { FaCheck } from "react-icons/fa";
 
 const CaseStudyDetail = () => {
   const { id } = useParams();
@@ -85,18 +86,15 @@ const CaseStudyDetail = () => {
             
             <section className="mb-12">
               <h2 className="text-2xl font-display font-bold mb-4 text-primary">Key Highlights</h2>
-              <ul className="space-y-4">
-                {caseStudy.keyHighlights?.map((highlight, index) => (
-                  <li key={index} className="flex">
-                    <span className="bg-green-100 text-green-800 p-1 rounded-full mr-3 flex-shrink-0">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                    </span>
-                    <span className="text-gray-700">{highlight}</span>
-                  </li>
-                ))}
-              </ul>
+              <ul className="space-y-3">
+  {caseStudy.keyHighlights?.map((highlight, index) => (
+    <li key={index} className="flex items-start gap-2">
+      <FaCheck size={16} className="mt-1 text-green-600" />
+      <span className="text-gray-800 leading-relaxed">{highlight}</span>
+    </li>
+  ))}
+</ul>
+
             </section>
             
             <section className="mb-12">

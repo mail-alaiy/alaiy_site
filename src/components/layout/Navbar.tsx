@@ -21,10 +21,6 @@ const Navbar = () => {
   return (
     <header className="absolute top-0 left-0 right-0 z-50 py-4 px-6">
       <div className="container mx-auto">
-        {/* Mobile Logo - Only visible on mobile */}
-        <div className="md:hidden absolute left-6 top-4 flex items-center">
-          <span className="text-xl font-display font-bold text-white">alaiy</span>
-        </div>
 
         {/* Desktop Navigation - White bar with centered links */}
         <div className="hidden md:block bg-white py-2 rounded-full shadow-md">

@@ -44,18 +44,6 @@ const Footer = () => {
                   className="h-8 object-contain" 
                 />
               </a>
-              <a 
-                href="https://g.co/kgs/UyPt93S" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-block"
-              >
-                <img 
-                  src="/lovable-uploads/bb2ba8c6-db79-4f55-8c39-76e71c3c1a84.png" 
-                  alt="IIMB Logo" 
-                  className="h-8 object-contain" 
-                />
-              </a>
             </div>
           </div>
         </div>
